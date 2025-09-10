@@ -68,7 +68,7 @@ return 0;
 
 int main(){
 string plaintext;
-iint a, b;
+int a, b;
 cout << "Enter the message: ";
 cin >> plaintext;
 
@@ -84,8 +84,9 @@ if(gcd(a,26) != 1){
 cout << "Include key a. Must be coprime with 26" << endl;
 return 1;
 }
+}
 /*
-string ciphertext = encrypt(plaintext, a b);
+string ciphertext = encrypt(plaintext, a, b);
 cout << "Encrypted: " << ciphertext << endl;
 
 string decryptedtext = decrypt(ciphertext, key);

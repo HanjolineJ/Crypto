@@ -1,0 +1,32 @@
+#ciphertext = "1rvmnir bpr sumvbwvr jx bpr lmiwv yjeryrkbi jx qmbm wi bpr xjvni mkd ymibrut jx irhx wi bpr riirkvr jx ymbinlmtmipw utn qmumbr dj w ipmhh but bj rhnvwdmbr bpr yjeryrkbi jx bpr qmbm mvvjudwko bj yt wkbrusurbmbwjk lmird jk xjubt trmui jx ibndt iwokwxwvmkvr mkd ijyr ynib urymwk nkrashmwkrd bj ower m wb wi kjb mk rmit bmiq bj rashmwk rmvp yjeryrkb mkd wbi vjyshrbr rashmkmbwjk jkr cjnhd pmer bj lr fnmhwxwrd mká wkiswurd bj invp mk rabrkb bpmb pr vjnhd urmvp bpr ibmbr jx rkhwopbrkrd ywkd vmsmlhr jx urvjokwgwko ijnkdhrii ijnkd mkd ipmsrhrii ipmsr w dj kjb drry ytirhx bpr xwkmh mnbpjuwbt lnb yt rasruwrkvr cwbp qmbm pmi hrxb kj djnlb bpmb bpr xjhhjcwko wi bpr sujsru msshwvmbwjk mkd wkbrusurbmbwjk w jxxru yt bprjuwri wk bpr pjsr bpmb bpr riirkvr jx jqwkmcmk qmumbr cwhh urymwk wkbmvb"
+
+
+ciphertext2 = "1evmnse the sumvtive of the lmsiv yoeeyekts of qmtm is the fovns mkd ymsteut of sehf is the essekve of ymtsnlmtmshi utn qmumte do i shmhh tut to ehnvidmte the yoeeyekts of the qmtm mvvoudiko to yt ikteusuetmtiok lmsed ok foutt temus of stndt siokifivmkve mkd soye ynst ueymik nkeashmiked to oiee m it is kot mk emst tmsq to eashmik emvh yoeeyekt mkd its voyshete eashmkmtiok oke conhd hmee to le fnmhified mká ikssiued to snvh mk eatekt thmt he vonhd uemvh the stmte of ekhiohteked yikd vmsmlhe of uevookigiko sonkdhess sonkd mkd shmsehess shmse i do kot deey ytsehf the fikmh mnthouitt lnt yt easeuiekve cith qmtm hms heft ko donlt thmt the fohhociko is the suoseu msshivmtiok mkd ikteusuetmtiok i offeu yt theouies ik the hose thmt the essekve of oqikmcmk qmumte cihh ueymik iktmvt"
+
+key = {
+    'b': 't',
+    'p': 'h',
+    'r': 'e',
+    'j': 'o',
+    'x': 'f',
+    'w': 'i',
+    'i': 's',
+    'jx': 'of',
+    'mkd': 'and',
+    'wi': 'is'
+}
+
+# Decrypted text
+decrypted_text = ""
+
+# Iterate through the ciphertext2
+for char in ciphertext2:
+    # If the character is in our key, replace it with the plaintext letter
+    if char in key:
+        decrypted_text += key[char]
+    # If it's not, keep it as is
+    else:
+        decrypted_text += char
+
+# Print the partially decrypted text to see your progress
+print(decrypted_text)
